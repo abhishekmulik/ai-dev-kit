@@ -31,6 +31,6 @@
 - No TODOs left without an entry in docs/BACKLOG.md
 
 ## Agent workflow
-Plan (planner) -> per phase: implement -> test -> review loop -> /ship (audit + release).
-Humans approve: the plan, any new dependency, any schema/API contract change, production deploy.
+Plan (planner) -> plan-reviewer loop (/review-plan) -> human approves (Status: approved) -> per phase: implement -> test -> review loop -> /ship (audit + release).
+Humans approve: the plan (after plan-reviewer APPROVE), any new dependency, any schema/API contract change, production deploy.
 Never: disable tests to pass, commit secrets, push to main directly.

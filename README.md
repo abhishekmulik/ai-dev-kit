@@ -4,7 +4,8 @@ Install once: ./install.sh (puts agents and commands in ~/.claude).
 Per project: copy CLAUDE.project.md to CLAUDE.md and fill in stack and commands.
 
 Flow:
-/kickoff <idea>  -> planner writes SPEC, ARCHITECTURE, PLAN. You approve.
+/kickoff <idea>  -> planner writes SPEC, ARCHITECTURE, PLAN; plan-reviewer iterates them (max 3 rounds). You approve.
+/review-plan     -> re-run the plan review loop any time you edit the docs
 /build-phase 1   -> implementer -> test-engineer -> code-reviewer loop (max 3 rounds)
 /build-phase 2 ... repeat
 /ship            -> quality-auditor + release-engineer, human approves prod deploy

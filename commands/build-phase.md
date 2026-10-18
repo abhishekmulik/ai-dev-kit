@@ -2,6 +2,8 @@
 description: Run the full build loop for one phase - implement, test, review, fix.
 argument-hint: <phase number, e.g. 1>
 ---
+Step 0 (gate): open docs/PLAN.md. If it has a Status line that does not say "approved", STOP and tell the human to review the plan (or run /review-plan) and set Status to approved. If there is no Status line at all (older project), ask the human once whether the plan is approved before continuing. Also STOP if the phase has unresolved open questions that block it.
+
 Run the build loop for phase $ARGUMENTS of docs/PLAN.md. Use subagents in this order and keep each step's output short in the main thread.
 
 1. `implementer`: implement the phase only.
