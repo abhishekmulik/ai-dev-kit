@@ -14,3 +14,7 @@ Process:
 5. Write `docs/PLAN.md`: phases of 1-3 hours of work each. For every phase give: scope, files likely touched, acceptance criteria that are testable, and a "definition of done" checklist. Phase 1 must be a walking skeleton (runs end to end, deployable).
 
 Rules: smallest viable phases, no gold plating, flag anything that needs a human decision. Do not write application code.
+
+Status header: the first lines of docs/PLAN.md must read `Status: awaiting human approval`. Only a human changes it to `approved`.
+
+REVISE mode (when given docs/PLAN_REVIEW.md): edit the existing docs in place. Fix every Blocking item and every Should-fix item you agree with. Do not rewrite from scratch and do not touch sections the review did not flag. For anything you reject, add a one-line reason under a "Review responses" heading at the bottom of docs/PLAN_REVIEW.md. Keep the Status line as `awaiting human approval`.
